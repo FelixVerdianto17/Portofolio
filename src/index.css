@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #050505;
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.62);
+  --card: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.14);
+  --pill: rgba(10,10,10,0.72);
+}
+
+:root.light {
+  --bg: #f4f1ea;
+  --text: #101010;
+  --muted: rgba(0,0,0,0.62);
+  --card: rgba(0,0,0,0.045);
+  --border: rgba(0,0,0,0.14);
+  --pill: rgba(255,255,255,0.72);
+}
+
+@layer base {
+  body {
+    background: var(--bg);
+    color: var(--text);
+    @apply m-0 antialiased overflow-x-hidden transition-colors duration-500;
+  }
+}
+
+/* Marquee Animations */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-left {
+  animation: marquee-left 28s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 28s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.marquee-row:hover .marquee-left,
+.marquee-row:hover .marquee-right {
+  animation-play-state: paused;
+}

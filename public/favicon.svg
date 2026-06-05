@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .text { fill: #101010; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .text { fill: #ffffff; }
+    }
+  </style>
+  <text x="50" y="78" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="80" font-weight="900" class="text" text-anchor="middle" letter-spacing="-0.08em">F.</text>
+</svg>
