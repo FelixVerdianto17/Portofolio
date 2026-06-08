@@ -153,8 +153,7 @@ export default function Navbar() {
                       {[
                         { name: 'Instagram', url: 'https://www.instagram.com/velcreative.id/' },
                         { name: 'LinkedIn', url: 'https://www.linkedin.com/in/felix-verdianto-015449225' },
-                        { name: 'GitHub', url: 'https://github.com/felixverdianto' },
-                        { name: 'WhatsApp', url: 'https://wa.me/6283866284860' },
+                        { name: 'GitHub', url: 'https://github.com/FelixVerdianto17' },
                       ].map(social => (
                         <a
                           key={social.name}

@@ -77,12 +77,12 @@ export default function ContactCTA() {
         >
           {/* Primary CTA */}
           <a 
-            href="https://wa.me/6283866284860" 
+            href="https://github.com/FelixVerdianto17" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative px-8 md:px-10 py-4 md:py-5 bg-[var(--text)] text-[var(--bg)] rounded-full font-medium tracking-wide flex items-center justify-center gap-3 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] w-full sm:w-auto"
           >
-            <span className="relative z-10 font-bold">Chat on WhatsApp</span>
+            <span className="relative z-10 font-bold">Visit My GitHub</span>
             <svg className="w-5 h-5 relative z-10 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
